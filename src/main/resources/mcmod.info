@@ -1,0 +1,16 @@
+[
+{
+  "modid": "emadd",
+  "name": "Eridium Addon",
+  "description": "Adds eridium to HBM's NTM.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["r0stus"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
