@@ -44,7 +44,7 @@ public class ModItems {
 		regHazard();
 	}
 
-    public static void initItems() {
+    private static void initItems() {
         ingot_em299 = new Item().setUnlocalizedName("ingot_em299").setCreativeTab(MainRegistry.partsTab).setTextureName(EmAdd.MODID + ":ingot_em299");
         powder_em299 = new Item().setUnlocalizedName("powder_em299").setCreativeTab(MainRegistry.partsTab).setTextureName(EmAdd.MODID + ":powder_em299");
 

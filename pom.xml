@@ -1,0 +1,7 @@
+<dependency>
+    <groupId>com.hbm</groupId>
+    <artifactId>ntm</artifactId>
+    <version>1.0.0</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/libs/hbmntm.jar</systemPath>
+</dependency>
