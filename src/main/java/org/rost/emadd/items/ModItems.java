@@ -2,21 +2,11 @@ package org.rost.emadd.items;
 
 import org.rost.emadd.EmAdd;
 import com.hbm.main.MainRegistry;
-import com.hbm.hazard.HazardSystem;
-import com.hbm.hazard.HazardRegistry;
-import com.hbm.hazard.HazardData;
-import com.hbm.hazard.type.HazardTypeBase;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModItems {
-
-    public static final float em304 = 0.005F;
-    public static final float em306 = 2.0F;
-    public static final float em299 = 25.0F;
-    public static final float em320p = 500000.0F;
-    public static final float em_slag = 288.0F;
 
     public static Item ingot_em299;
     public static Item powder_em299;
@@ -41,7 +31,6 @@ public class ModItems {
 	public static void mainRegistry() {
 		initItems();
 		regItems();
-		regHazard();
 	}
 
     private static void initItems() {
@@ -64,23 +53,6 @@ public class ModItems {
         raw_eridium = new Item().setUnlocalizedName("raw_eridium").setCreativeTab(MainRegistry.partsTab).setTextureName(EmAdd.MODID + ":raw_eridium");
         powder_eridium = new Item().setUnlocalizedName("powder_eridium").setCreativeTab(MainRegistry.partsTab).setTextureName(EmAdd.MODID + ":powder_eridium");
     }
-
-    private static void regHazard() {
-    	HazardSystem.register(ingot_em299, makeData(HazardRegistry.RADIATION, em299 * HazardRegistry.ingot));
-		HazardSystem.register(ingot_em304, makeData(HazardRegistry.RADIATION, em304 * HazardRegistry.ingot));
-		HazardSystem.register(ingot_em306, makeData(HazardRegistry.RADIATION, em306 * HazardRegistry.ingot));
-		HazardSystem.register(ingot_em320p, makeData(HazardRegistry.RADIATION, em320p * HazardRegistry.ingot));
-
-		HazardSystem.register(powder_em299, makeData(HazardRegistry.RADIATION, em299 * HazardRegistry.powder));
-		HazardSystem.register(powder_em304, makeData(HazardRegistry.RADIATION, em304 * HazardRegistry.powder));
-		HazardSystem.register(powder_em306, makeData(HazardRegistry.RADIATION, em306 * HazardRegistry.powder));
-		HazardSystem.register(powder_em320p, makeData(HazardRegistry.RADIATION, em320p * HazardRegistry.powder));
-    }
-
-    private static HazardData makeData() { return new HazardData(); }
-	private static HazardData makeData(HazardTypeBase hazard) { return new HazardData().addEntry(hazard); }
-	private static HazardData makeData(HazardTypeBase hazard, float level) { return new HazardData().addEntry(hazard, level); }
-	private static HazardData makeData(HazardTypeBase hazard, float level, boolean override) { return new HazardData().addEntry(hazard, level, override); }
 
     private static void regItems() {
         GameRegistry.registerItem(ingot_em299, ingot_em299.getUnlocalizedName());

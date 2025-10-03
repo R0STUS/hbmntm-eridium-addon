@@ -1,6 +1,9 @@
 package org.rost.emadd;
 
 import org.rost.emadd.items.ModItems;
+import org.rost.emadd.blocks.ModBlocks;
+import org.rost.emadd.fluids.ModFluids;
+import org.rost.emadd.ModHazard;
 import net.minecraft.init.Blocks;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -13,5 +16,8 @@ public class EmAdd {
     @EventHandler
     public void init(FMLInitializationEvent event) {
         ModItems.mainRegistry();
+        ModBlocks.mainRegistry();
+        ModFluids.mainRegistry();
+        ModHazard.mainRegistry();
     }
 }

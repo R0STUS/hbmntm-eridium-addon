@@ -1,3 +1,4 @@
+hbmfluid.em_slag=Eridium Slag
 item.crystal_eridium.name=Eridium Crystals
 item.ingot_em299.name=Eridium-299 Ingot
 item.ingot_em304.name=Eridium-304 Ingot
@@ -11,3 +12,10 @@ item.powder_em312.name=Eridium-312 Powder
 item.powder_em320p.name=Eridium-320+ Powder
 item.powder_eridium.name=Eridium Powder
 item.raw_eridium.name=Raw Eridium
+tile.block_em299.name=Eridium-299 Block
+tile.block_em304.name=Eridium-304 Block
+tile.block_em306.name=Eridium-306 Block
+tile.block_em312.name=Eridium-312 Block
+tile.block_em320p.name=Eridium-320+ Block
+tile.cluster_eridium.name=Eridium Cluster
+tile.ore_eridium.name=Eridium Ore
